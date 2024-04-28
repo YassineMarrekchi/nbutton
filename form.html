@@ -239,44 +239,25 @@
 </head>
 <body>
   
-    <script>
-      function navigate() {
-        window.open("https://drive.google.com/file/d/1ml5m9-UQlaeMAfjOYON0bCcjNE6btYMt/view?usp=sharing", '_blank').focus();
-      }
-    </script>
   
-<form style="width: 26rem;">
-    <!-- Name input -->
-    <div data-mdb-input-init class="form-outline mb-4">
-      <input type="text" id="form4Example1" class="form-control" />
-      <label class="form-label" for="form4Example1">Name</label>
+<div class="container">
+  <form target="_blank" action="https://formsubmit.co/yassinemarrekchi@gmail.com" method="POST">
+    <div class="form-group">
+      <div class="form-row">
+        <div class="col">
+          <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+        </div>
+        <div class="col">
+          <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+        </div>
+      </div>
     </div>
-  
-    <!-- Email input -->
-    <div data-mdb-input-init class="form-outline mb-4">
-      <input type="email" id="form4Example2" class="form-control" />
-      <label class="form-label" for="form4Example2">Email address</label>
+    <div class="form-group">
+      <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
     </div>
-  
-    <!-- Message input -->
-    <div data-mdb-input-init class="form-outline mb-4">
-      <textarea class="form-control" id="form4Example3" rows="4"></textarea>
-      <label class="form-label" for="form4Example3">Message</label>
-    </div>
-  
-    <!-- Checkbox -->
-    <div class="form-check d-flex justify-content-center mb-4">
-      <input
-        class="form-check-input me-2"
-        type="checkbox"
-        value=""
-        id="form4Example4"
-        checked
-      />
-      <label class="form-check-label" for="form4Example4">
-        Send me a copy of this message
-      </label>
-    </div>
+    <button type="submit" class="btn btn-lg btn-dark btn-block">Send me a message</button>
+  </form>
+</div>
   
     <!-- Submit button -->
     <button class="btn large my-color rounded threeD" type="button" onclick="navigate()"> Send me a message </button>
